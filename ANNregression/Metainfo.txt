@@ -1,0 +1,17 @@
+Name of Quantlet: ANNregression
+
+Published in: Quantlet
+
+Description: 'Gradient descent implementation from scratch in order to train an artificial neural network to fit a regression of city-cycle fuel consumption in miles per gallon.'
+
+Keywords: Dense, ANN, MLP, deep learning, neural network
+
+Author: Bruno Spilak
+
+Submitted:  2019-02-05 by Bruno Spilak
+
+Output:
+- ANNregression1.png
+
+Data:
+- mpg.csv
