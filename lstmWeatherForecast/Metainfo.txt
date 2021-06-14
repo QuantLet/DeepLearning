@@ -1,0 +1,19 @@
+Name of Quantlet: lstmWeatherForecast
+
+Published in: Quantlet
+
+Description: ''
+
+Keywords: Dense, ANN, MLP, RNN, LSTM, deep learning, weather, forecasting, neural network
+
+Author: Bruno Spilak
+
+Submitted:  2021-06-14 by Bruno Spilak
+
+Output:
+- MnistDeepLearning1.png
+- MnistDeepLearning2.png
+- Dense-model_mnist_fashion.h5
+- LSTM-model_mnist_fashion.h5
+- RNN-model_mnist_fashion.h5
+- GRU-model_mnist_fashion.h5
