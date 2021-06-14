@@ -2,7 +2,7 @@ Name of Quantlet: lstmWeatherForecast
 
 Published in: Quantlet
 
-Description: ''
+Description: 'Training a simple LSTM model for weather forecasting task and comparing with a MLP'
 
 Keywords: Dense, ANN, MLP, RNN, LSTM, deep learning, weather, forecasting, neural network
 
@@ -10,10 +10,13 @@ Author: Bruno Spilak
 
 Submitted:  2021-06-14 by Bruno Spilak
 
+Data:
+- jena_climate_2009_2016.csv
+
 Output:
-- MnistDeepLearning1.png
-- MnistDeepLearning2.png
-- Dense-model_mnist_fashion.h5
-- LSTM-model_mnist_fashion.h5
-- RNN-model_mnist_fashion.h5
-- GRU-model_mnist_fashion.h5
+- lstmWeatherForecast_0.png
+- lstmWeatherForecast_1.png
+- lstmWeatherForecast_2.png
+- lstmWeatherForecast_3.png
+- model_checkpoint.h5
+- mlp_model_checkpoint.h5
