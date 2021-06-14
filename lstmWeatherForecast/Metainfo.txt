@@ -2,9 +2,9 @@ Name of Quantlet: lstmWeatherForecast
 
 Published in: Quantlet
 
-Description: 'Training a simple LSTM model for weather forecasting task and comparing with a MLP'
+Description: 'Training a simple LSTM model for weather forecasting task and comparing with a MLP. The data is downloaded automatically. To run just install the requirements with pip inside your environment.'
 
-Keywords: Dense, ANN, MLP, RNN, LSTM, deep learning, weather, forecasting, neural network
+Keywords: Dense, MLP, LSTM, deep learning, weather, forecasting, neural network
 
 Author: Bruno Spilak
 
