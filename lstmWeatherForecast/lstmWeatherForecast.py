@@ -23,6 +23,12 @@ from zipfile import ZipFile
 import os
 
 
+def batch_generator_2d(ts_dataset):
+    while True:
+        for x_b, y_b in ts_dataset:
+            yield tf.reshape(x_b, (x_b.shape[0], x_b.shape[1] * x_b.shape[2])), y_b
+
+
 def show_raw_visualization(data, save_path=None, show=False):
     time_data = data[date_time_key]
     fig, axes = plt.subplots(
@@ -389,14 +395,7 @@ if __name__ == "__main__":
 
     """# Build MLP model for comparison"""
 
-    def batch_generator_2d(ts_dataset):
-        while True:
-            for x_b, y_b in ts_dataset:
-                yield tf.reshape(x_b, (x_b.shape[0], x_b.shape[1] * x_b.shape[2])), y_b
-
-
     n_features = 7
-
     inputs = keras.layers.Input(shape=(sequence_length * n_features))
     dense_out = keras.layers.Dense(32, activation='tanh')(inputs)
     outputs = keras.layers.Dense(1)(dense_out)
