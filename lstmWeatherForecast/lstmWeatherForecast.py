@@ -23,6 +23,12 @@ from zipfile import ZipFile
 import os
 
 
+def batch_generator_2d(ts_dataset):
+    while True:
+        for x_b, y_b in ts_dataset:
+            yield tf.reshape(x_b, (x_b.shape[0], x_b.shape[1] * x_b.shape[2])), y_b
+
+
 def show_raw_visualization(data, save_path=None, show=False):
     time_data = data[date_time_key]
     fig, axes = plt.subplots(
@@ -215,11 +221,11 @@ if __name__ == "__main__":
 
     date_time_key = "Date Time"
 
-    show_raw_visualization(df, save_path='lstmWeatherForecast_0.png')
+    show_raw_visualization(df, save_path='lstmWeatherForecast0.png')
 
     """This heat map shows the correlation between different features."""
 
-    show_heatmap(df, save_path='lstmWeatherForecast_1.png')
+    show_heatmap(df, save_path='lstmWeatherForecast1.png')
 
     """## Data Preprocessing
     
@@ -367,7 +373,7 @@ if __name__ == "__main__":
     decreasing.
     """
 
-    visualize_loss(history, "Training and Validation Loss", save_path='lstmWeatherForecast_2.png')
+    visualize_loss(history, "Training and Validation Loss", save_path='lstmWeatherForecast2.png')
 
     """## Prediction
     
@@ -389,14 +395,7 @@ if __name__ == "__main__":
 
     """# Build MLP model for comparison"""
 
-    def batch_generator_2d(ts_dataset):
-        while True:
-            for x_b, y_b in ts_dataset:
-                yield tf.reshape(x_b, (x_b.shape[0], x_b.shape[1] * x_b.shape[2])), y_b
-
-
     n_features = 7
-
     inputs = keras.layers.Input(shape=(sequence_length * n_features))
     dense_out = keras.layers.Dense(32, activation='tanh')(inputs)
     outputs = keras.layers.Dense(1)(dense_out)
@@ -427,7 +426,7 @@ if __name__ == "__main__":
         callbacks=[es_callback, modelckpt_callback],
         validation_steps=x_val.shape[0] // batch_size
     )
-    visualize_loss(mlp_history, "MLP Training and Validation Loss", save_path='lstmWeatherForecast_3.png')
+    visualize_loss(mlp_history, "MLP Training and Validation Loss", save_path='lstmWeatherForecast3.png')
 
     mlp_mse = mlp_model.evaluate(mlp_dataset_val, steps=x_val.shape[0] // batch_size)
     mlp_rmse = np.sqrt(mlp_mse)

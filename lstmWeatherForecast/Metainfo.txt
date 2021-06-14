@@ -14,9 +14,9 @@ Data:
 - jena_climate_2009_2016.csv
 
 Output:
-- lstmWeatherForecast_0.png
-- lstmWeatherForecast_1.png
-- lstmWeatherForecast_2.png
-- lstmWeatherForecast_3.png
+- lstmWeatherForecast0.png
+- lstmWeatherForecast1.png
+- lstmWeatherForecast2.png
+- lstmWeatherForecast3.png
 - model_checkpoint.h5
 - mlp_model_checkpoint.h5
