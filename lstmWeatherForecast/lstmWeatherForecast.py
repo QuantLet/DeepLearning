@@ -215,11 +215,11 @@ if __name__ == "__main__":
 
     date_time_key = "Date Time"
 
-    show_raw_visualization(df, save_path='lstmWeatherForecast_0.png')
+    show_raw_visualization(df, save_path='lstmWeatherForecast0.png')
 
     """This heat map shows the correlation between different features."""
 
-    show_heatmap(df, save_path='lstmWeatherForecast_1.png')
+    show_heatmap(df, save_path='lstmWeatherForecast1.png')
 
     """## Data Preprocessing
     
@@ -367,7 +367,7 @@ if __name__ == "__main__":
     decreasing.
     """
 
-    visualize_loss(history, "Training and Validation Loss", save_path='lstmWeatherForecast_2.png')
+    visualize_loss(history, "Training and Validation Loss", save_path='lstmWeatherForecast2.png')
 
     """## Prediction
     
@@ -427,7 +427,7 @@ if __name__ == "__main__":
         callbacks=[es_callback, modelckpt_callback],
         validation_steps=x_val.shape[0] // batch_size
     )
-    visualize_loss(mlp_history, "MLP Training and Validation Loss", save_path='lstmWeatherForecast_3.png')
+    visualize_loss(mlp_history, "MLP Training and Validation Loss", save_path='lstmWeatherForecast3.png')
 
     mlp_mse = mlp_model.evaluate(mlp_dataset_val, steps=x_val.shape[0] // batch_size)
     mlp_rmse = np.sqrt(mlp_mse)
