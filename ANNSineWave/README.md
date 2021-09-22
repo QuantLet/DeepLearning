@@ -4,7 +4,7 @@
 
 ```yaml
 
-Name of Quantlet: ActivationFunction
+Name of Quantlet: ANNSineWave
 
 Published in: Quantlet
 
@@ -18,25 +18,25 @@ Author: Bruno Spilak
 Submitted:  2019-03-22 by Bruno Spilak
 
 Output:
-- ActivationFunction1.png
-- ActivationFunction2.png
-- ActivationFunction3.png
-- ActivationFunction4.png
-- ActivationFunction5.png
-- ActivationFunction6.png
+- ANNSineWave1.png
+- ANNSineWave2.png
+- ANNSineWave3.png
+- ANNSineWave4.png
+- ANNSineWave5.png
+- ANNSineWave6.png
 ```
 
-![Picture1](ActivationFunction1.png)
+![Picture1](ANNSineWave1.png)
 
-![Picture2](ActivationFunction2.png)
+![Picture2](ANNSineWave2.png)
 
-![Picture3](ActivationFunction3.png)
+![Picture3](ANNSineWave3.png)
 
-![Picture4](ActivationFunction4.png)
+![Picture4](ANNSineWave4.png)
 
-![Picture5](ActivationFunction5.png)
+![Picture5](ANNSineWave5.png)
 
-![Picture6](ActivationFunction6.png)
+![Picture6](ANNSineWave6.png)
 
 ### PYTHON Code
 ```python
