@@ -1,0 +1,16 @@
+Name of Quantlet: HyperparameterTuning
+
+Published in: Quantlet
+
+Description: 'Training a simple MLP model with different hyperparameters on a sine function. To run just install the requirements with pip inside your environment.'
+
+Keywords: Dense, MLP, hyperparameter tuning, deep learning, forecasting, neural network
+
+Author: Rahul Tak
+
+Submitted:  2024-11-28 by Rahul Tak
+
+
+Output:
+- ActivationFunction.png
+- Hyperparameter.png
