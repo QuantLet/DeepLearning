@@ -1,0 +1,20 @@
+Name of Quantlet: BitcoinTrading
+
+Published in: Quantlet
+
+Description: 'A long-only bitcoin trading algoritm based on LSTM predictions'
+
+Keywords: LSTM, Bitcoin, Trading, Dense, classification, neural network
+
+Author: Rahul Tak
+
+Submitted:  2024-12-18 by Rahul Tak
+
+Output:
+- Returns_test.png
+- Returns_val.png
+- accuracyVSthreshold.png
+- lossVSthreshold.png
+
+Data:
+- BTC_USDT_5m.csv
