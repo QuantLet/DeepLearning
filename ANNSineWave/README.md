@@ -9,7 +9,7 @@ Name of Quantlet: ActivationFunction
 
 Published in: Quantlet
 
-Description: Train with keras several MLP with one hidden layer
+Description: Train with keras several MLP with one hidden layer estimating a sinus function to compare activation functions and layer size (neurons number) effect.
 
 Keywords: Dense, ANN, MLP, deep learning, neural network, activation function, hidden layer
 
